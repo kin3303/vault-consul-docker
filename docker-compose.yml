@@ -3,6 +3,7 @@ version: '3.7'
 services:
 
   vault:
+    image: kin3303/vault
     build:
       context: ./vault
       dockerfile: Dockerfile
@@ -23,6 +24,7 @@ services:
       - consul
  
   consul-worker:
+    image: kin3303/consul  
     build:
       context: ./consul
       dockerfile: Dockerfile
@@ -33,6 +35,7 @@ services:
       - consul
 
   consul:
+    image: kin3303/consul
     build:
       context: ./consul
       dockerfile: Dockerfile
