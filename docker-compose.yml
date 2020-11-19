@@ -24,7 +24,7 @@ services:
       - consul
  
   consul-worker:
-    image: kin3303/consul  
+    image: kin3303/consul
     build:
       context: ./consul
       dockerfile: Dockerfile
